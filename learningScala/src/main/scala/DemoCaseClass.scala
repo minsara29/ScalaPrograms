@@ -23,5 +23,23 @@ object DemoCaseClass {
     println(nissan == toyota) // Equals validation of two objects
 
     println(nissan) // toString function equalent __str__
+
+    // pattern
+
+    var BMW = Cars("BMW", "Corolla")
+    var honda = Cars("Honda", "Civic")
+    var other = Cars("Unknown", "unknown")
+
+    matchPattern(BMW)
+    matchPattern(other)
+  }
+
+  def matchPattern(car: Cars): Unit ={
+    car match {
+      case Cars("Nissan", "Rogue") => println("Yep, its a Nissan")
+      case Cars("Honda", "Civic") => println("Yep, its a Honda")
+      case Cars("BMW", "Corolla") => println("Yep, its a Corolla")
+      case cars: Cars => println(" its a Unknown")
+    }
   }
 }
