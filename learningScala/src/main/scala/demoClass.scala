@@ -25,5 +25,11 @@ object demoClass {
     //var car.newfield: Int = 15 // give an error
 
 //    print("creating new variable outside of the class : " + car.totalCost()+car.new)
+
+    var car2 = new Car
+
+    println("Car2 's Cost values :" + car2.cost)
+
+//    println("Class variables test :" + Car.cost)
   }
 }
