@@ -1,7 +1,7 @@
-class Values{
-  var x: Int = 4
-  var y: Double = 7.3
-  var z: String = "Hi"
+class Values(a: Int = 4, b: Double = 7.6, c: String= "Hi"){
+  var x: Int = a
+  var y: Double = b
+  var z: String = c
 
   println(s"<Values> x=${x}, y=${y}, z=${z}")
 }
