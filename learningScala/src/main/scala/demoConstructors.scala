@@ -6,7 +6,8 @@ class Values(a: Int = 4, b: Double = 7.6, c: String= "Hi"){
   println(s"<Values> x=${x}, y=${y}, z=${z}")
 }
 
-class Value1(a: Int, b: Double, c: String){
+
+class Value1(a: Int, b: Double, c: String){ //called parameter
   var x: Int = a
   var y: Double = b
   var z: String = c
@@ -26,10 +27,29 @@ class Value1(a: Int, b: Double, c: String){
   println(s"<Value1> x=${x}, y=${y}, z=${z}")
 }
 
-object constructors {
+class Value2(var x: Int, var y: Double, var z: String){ //called primary constructors
+
+  def this(){    // auxiliary constructors
+    this(0, 0.0, "Default")
+  }
+
+  def this(a: Int){
+    this(a, 0.0, "Default")
+  }
+
+  def this(a: Int, b: Double){
+    this(a, b, "Default")
+  }
+
+  println(s"<Value1> x=${x}, y=${y}, z=${z}")
+}
+
+
+object demoConstructors {
 
   def main(args: Array[String])={
     var v = new Values()
+
     var v1 = new Value1(1, 2.2, "Kannan")
     var v2 = new Value1()
     var v3 = new Value1(3)

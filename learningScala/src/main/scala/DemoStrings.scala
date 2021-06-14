@@ -10,7 +10,7 @@ object DemoStrings {
         |String
         |""".stripMargin
     var lastName: String = "Tamilraj"
-    println(name.charAt(1)) //to find the index
+    println(name.charAt(1)) //to find char with the index
     println(name.equals(lastName))
     println(s"my name is $name and the lastName is $lastName")
     println(lastName.compareTo("tamilraj"))
