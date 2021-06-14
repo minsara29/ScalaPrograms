@@ -35,7 +35,3 @@ object DemoRegEx {
 
 }
 
-"""
-  |
-  |
-  |""".stripMargin
