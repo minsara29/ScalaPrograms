@@ -4,6 +4,7 @@ object TuplesDemo {
 
     val tuple2 = new Tuple4('1', "another way to declare", "max22", (2,3))
     val tuple3 = new Tuple2('1', "another way to declare tupl2 1.2.3...22")
+// tuple can contain 1..22
 
     println(tuple1)
 
@@ -14,6 +15,7 @@ object TuplesDemo {
     println(tuple1._2)
     println(tuple1._3)
 
+    //looping the Tuple elements
     tuple2.productIterator.foreach{
       i => println(i)
     }

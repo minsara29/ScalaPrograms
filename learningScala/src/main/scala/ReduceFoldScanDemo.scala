@@ -11,6 +11,9 @@ object ReduceFoldScanDemo {
       (x, y) => {println( x + "," + y)
                   x + y} ))
 
+    var rst = num.reduce((x,y)=> x+y+10)
+    println("num of reduce value is " + rst)
+
 
     println(num.reduceRight( //right to left
       (x,y) => {

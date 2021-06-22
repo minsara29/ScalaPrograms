@@ -1,4 +1,4 @@
-object testObject{
+object TestObject{
   var x: Int = 2
   var y: Double = 5.5
 
@@ -6,7 +6,7 @@ object testObject{
 
 }
 
-object demoObjects {
+object ObjectsDemo {
 
   def main(args: Array[String]): Unit = {
     println("Accessing Object Variable :" + TestObject.x)

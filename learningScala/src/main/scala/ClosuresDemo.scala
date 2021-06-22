@@ -9,5 +9,6 @@ object ClosuresDemo {
 
   def main(args: Array[String]): Unit = {
     println(add(20))
+    println(num)
   }
 }

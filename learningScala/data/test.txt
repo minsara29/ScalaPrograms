@@ -1,0 +1,4 @@
+this is test file - first line
+for scala reading  - second line
+this is the line 3 from test file
+

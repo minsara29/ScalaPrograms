@@ -8,6 +8,10 @@ class Car{
     cost + tax + county_tax
   }
 
+//  def example(a: Int): Int ={ // default is val
+//    a += 1 // cannot re-assigned
+//  }
+
 }
 
 class Baaa(val x: Int) extends Car{

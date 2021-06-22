@@ -1,3 +1,5 @@
+import scala.collection.mutable.Set
+
 object SetsDemo {
 
   def main(args: Array[String]): Unit = {
@@ -10,7 +12,8 @@ object SetsDemo {
 
     println(set)
 
-    var mutableSet :scala.collection.mutable.Set[Int] = scala.collection.mutable.Set(1,2,3,4,5)
+//    var mutableSet :scala.collection.mutable.Set[Int] = scala.collection.mutable.Set(1,2,3,4,5)
+    val mutableSet = Set[Int](1, 2, 3, 4, 5, 5)
 
     println(mutableSet)
 

@@ -11,14 +11,14 @@ object OptionsDemo {
     println(lst)
     println(map)
 
-    println(lst.find( _ > 2))
-    println(lst.find( _ > 2).get)
-    println(map.get(3))
-    println(map.get(3).getOrElse(0))
+    println(lst.find( _ > 2)) // Some(4)
+    println(lst.find( _ > 2).get) // value 4
+    println(map.get(3)) //return None
+    println(map.get(3).getOrElse(0)) // if not found return 0
 //    println(map.get(3).get)
-    println(map.get(3).getOrElse())
+    println(map.get(3).getOrElse()) //Not good return ()
     println(map.get(3).getOrElse("Unknown"))
-    println(map.get(1).get)
+    println(map.get(1).get) // retunr the calue from Map
 
     val opt: Option[Int] = None
 
